@@ -1,0 +1,707 @@
+[
+  {
+    "colorIdentity": [
+      "B"
+    ],
+    "colors": [
+      "B"
+    ],
+    "convertedManaCost": 3,
+    "foreignData": [],
+    "layout": "normal",
+    "legalities": {},
+    "manaCost": "{2}{B}",
+    "name": "\"Rumors of My Death . . .\"",
+    "printings": [
+      "UST"
+    ],
+    "purchaseUrls": {
+      "cardmarket": "https://mtgjson.com/links/371e720c2fd4986f",
+      "tcgplayer": "https://mtgjson.com/links/f4da472f5769fc77"
+    },
+    "rulings": [],
+    "scryfallOracleId": "38bcba8b-2838-4ac8-9976-f9ccaa94fdba",
+    "subtypes": [],
+    "supertypes": [],
+    "text": "{3}{B}, Exile a permanent you control with a League of Dastardly Doom watermark: Return a permanent card with a League of Dastardly Doom watermark from your graveyard to the battlefield.",
+    "type": "Enchantment",
+    "types": [
+      "Enchantment"
+    ],
+    "uuid": "201f7042-dda1-53d6-a0bd-8225ba73f34a"
+  },
+  {
+    "colorIdentity": [
+      "W"
+    ],
+    "colors": [
+      "W"
+    ],
+    "convertedManaCost": 2,
+    "edhrecRank": 938,
+    "foreignData": [],
+    "isDateStamped": true,
+    "layout": "normal",
+    "legalities": {
+      "brawl": "Legal",
+      "commander": "Legal",
+      "duel": "Legal",
+      "future": "Legal",
+      "historic": "Legal",
+      "legacy": "Legal",
+      "modern": "Legal",
+      "pioneer": "Legal",
+      "standard": "Legal",
+      "vintage": "Legal"
+    },
+    "manaCost": "{1}{W}",
+    "name": "Dawn of Hope",
+    "printings": [
+      "GRN",
+      "PGRN"
+    ],
+    "rulings": [
+      {
+        "date": "2018-10-05",
+        "text": "Dawn of Hope’s first ability triggers just once for each life-gaining event, whether it’s 1 life from Vicious Rumors or 3 life from Creeping Chill."
+      },
+      {
+        "date": "2018-10-05",
+        "text": "You can’t pay {2} multiple times to draw more than one card each time you resolve Dawn of Hope’s triggered ability."
+      },
+      {
+        "date": "2018-10-05",
+        "text": "Each creature with lifelink dealing combat damage causes a separate life-gaining event. For example, if two creatures you control with lifelink deal combat damage at the same time, Dawn of Hope’s ability will trigger twice. However, if a single creature you control with lifelink deals combat damage to multiple creatures, players, and/or planeswalkers at the same time (perhaps because it has trample or was blocked by more than one creature), the ability will trigger only once."
+      },
+      {
+        "date": "2018-10-05",
+        "text": "If you gain an amount of life “for each” of something, that life is gained as one event and Dawn of Hope’s first ability triggers only once."
+      },
+      {
+        "date": "2018-10-05",
+        "text": "In a Two-Headed Giant game, life gained by your teammate won’t cause the ability to trigger, even though it caused your team’s life total to increase."
+      }
+    ],
+    "scryfallOracleId": "d7a38484-2acc-49a6-b32d-d54dddb14d31",
+    "subtypes": [],
+    "supertypes": [],
+    "text": "Whenever you gain life, you may pay {2}. If you do, draw a card.\n{3}{W}: Create a 1/1 white Soldier creature token with lifelink.",
+    "type": "Enchantment",
+    "types": [
+      "Enchantment"
+    ],
+    "uuid": "6b1f27a4-710a-50cd-b430-f1ef4c17bc07"
+  },
+  {
+    "colorIdentity": [
+      "G"
+    ],
+    "colors": [
+      "G"
+    ],
+    "convertedManaCost": 5,
+    "edhrecRank": 4587,
+    "foreignData": [
+      {
+        "flavorText": "「五つ目の太陽が昇った時、ミラディンは初めて真の夜明けを迎えた。」 ――最後のトロール、スラーンの皮膚に刻まれた文字",
+        "language": "Japanese",
+        "name": "全ての太陽の夜明け",
+        "text": "各色１色につき、あなたの墓地にあるその色のカードを最大１枚まで対象とし、それらをあなたの手札に戻す。全ての太陽の夜明けを追放する。",
+        "type": "ソーサリー"
+      },
+      {
+        "flavorText": "「当五阳升起时，秘罗地首度迎接了真正的黎明。」 ～最终巨魔图伦皮肤上所刻文字",
+        "language": "Chinese Simplified",
+        "name": "五色晨曦",
+        "text": "对每种颜色而言，将至多一张目标该颜色的牌从你的坟墓场移回你手上。放逐五色晨曦。",
+        "type": "法术"
+      }
+    ],
+    "layout": "normal",
+    "legalities": {
+      "commander": "Legal",
+      "duel": "Legal",
+      "legacy": "Legal",
+      "modern": "Legal",
+      "penny": "Legal",
+      "vintage": "Legal"
+    },
+    "manaCost": "{4}{G}",
+    "mtgoFoilId": 57363,
+    "mtgoId": 57362,
+    "name": "All Suns' Dawn",
+    "printings": [
+      "5DN",
+      "MM2"
+    ],
+    "purchaseUrls": {
+      "cardmarket": "https://mtgjson.com/links/f4b817bd08527cda",
+      "tcgplayer": "https://mtgjson.com/links/aed711f667733ad6"
+    },
+    "rulings": [
+      {
+        "date": "2004-12-01",
+        "text": "All Suns’ Dawn can have from zero to five targets, one for each color."
+      },
+      {
+        "date": "2004-12-01",
+        "text": "You can target two blue-and-white multicolored cards by choosing one as the blue card and one as the white card."
+      },
+      {
+        "date": "2004-12-01",
+        "text": "You choose the color each target must be when you choose it as a target, so if the card you targeted as a blue card is red when All Suns’ Dawn resolves, the card is an illegal target, even if the spell doesn’t target another red card."
+      }
+    ],
+    "scryfallOracleId": "a97d9a72-2e47-491b-b1db-9829a9abbbd7",
+    "subtypes": [],
+    "supertypes": [],
+    "text": "For each color, return up to one target card of that color from your graveyard to your hand. Exile All Suns' Dawn.",
+    "type": "Sorcery",
+    "types": [
+      "Sorcery"
+    ],
+    "uuid": "686ee8bd-6d4d-5fc7-aa21-daa37af8fb69"
+  },
+  {
+    "colorIdentity": [
+      "W"
+    ],
+    "colors": [
+      "W"
+    ],
+    "convertedManaCost": 5,
+    "edhrecRank": 10777,
+    "foreignData": [
+      {
+        "flavorText": "Sie singt für alle, die zum Schweigen gebracht wurden.",
+        "language": "German",
+        "name": "Engel der Morgenröte",
+        "text": "Fliegend\nWenn der Engel der Morgenröte ins Spiel kommt, erhalten Kreaturen, die du kontrollierst, +1/+1 und Wachsamkeit bis zum Ende des Zuges. (Sie werden beim Angreifen nicht getappt.)",
+        "type": "Kreatur — Engel"
+      },
+      {
+        "flavorText": "Canta por todas las voces que fueron silenciadas.",
+        "language": "Spanish",
+        "name": "Ángel del alba",
+        "text": "Vuela.\nCuando el Ángel del alba entre al campo de batalla, las criaturas que controlas obtienen +1/+1 y ganan la habilidad de vigilancia hasta el final del turno. (Estas criaturas no se giran al atacar.)",
+        "type": "Criatura — Ángel"
+      },
+      {
+        "flavorText": "Elle chante pour tous ceux qui ont été réduits au silence.",
+        "language": "French",
+        "name": "Ange de l'aube",
+        "text": "Vol\nQuand l'Ange de l'aube arrive sur le champ de bataille, les créatures que vous contrôlez gagnent +1/+1 et acquièrent la vigilance jusqu'à la fin du tour. (Attaquer avec ces créatures ne les fait pas s'engager.)",
+        "type": "Créature : ange"
+      },
+      {
+        "flavorText": "Canta per tutti coloro che sono stati messi a tacere.",
+        "language": "Italian",
+        "name": "Angelo dell'Alba",
+        "text": "Volare\nQuando l'Angelo dell'Alba entra nel campo di battaglia, le creature che controlli prendono +1/+1 e hanno cautela fino alla fine del turno. (Attaccano senza TAPpare.)",
+        "type": "Creatura — Angelo"
+      },
+      {
+        "flavorText": "彼女は沈黙する者たちのために歌う。",
+        "language": "Japanese",
+        "name": "暁の天使",
+        "text": "飛行\n暁の天使が戦場に出たとき、ターン終了時まで、あなたがコントロールしているクリーチャーは＋１/＋１の修整を受け、警戒を得る。（それらは攻撃してもタップしない。）",
+        "type": "クリーチャー — 天使"
+      },
+      {
+        "flavorText": "그녀는 침묵당했던 자들 모두를 위해 노래한다.",
+        "language": "Korean",
+        "name": "동틀 녘의 천사",
+        "text": "비행\n동틀 녘의 천사가 전장에 들어올 때, 당신이 조종하는 생물들은 턴종료까지 +1/+1을 받고 경계를 얻는다. (그 생물들은 공격해도 탭되지 않는다.)",
+        "type": "생물 — 천사"
+      },
+      {
+        "flavorText": "Ela canta por todos os que foram silenciados.",
+        "language": "Portuguese (Brazil)",
+        "name": "Anjo da Aurora",
+        "text": "Voar\nQuando Anjo da Aurora entra no campo de batalha, as criaturas que você controla recebem +1/+1 e ganham vigilância até o final do turno. (Elas não são viradas para atacar.)",
+        "type": "Criatura — Anjo"
+      },
+      {
+        "flavorText": "Она поет за всех тех, кого заставили замолчать.",
+        "language": "Russian",
+        "name": "Ангел Утренней Зари",
+        "text": "Полет\nКогда Ангел Утренней Зари выходит на поле битвы, существа под вашим контролем получают +1/+1 и Бдительность до конца хода. (Атакуя, они не поворачиваются.)",
+        "type": "Существо — Ангел"
+      },
+      {
+        "flavorText": "她为被噤声者而歌。",
+        "language": "Chinese Simplified",
+        "name": "黎明天使",
+        "text": "飞行\n当黎明天使进战场时，直到回合结束，由你操控的生物得+1/+1且获得警戒异能。（它们攻击时不需横置。）",
+        "type": "生物 ～天使"
+      },
+      {
+        "flavorText": "被噤聲者而歌。",
+        "language": "Chinese Traditional",
+        "name": "黎明天使",
+        "text": "飛行\n當黎明天使進戰場時，直到回合結束，由你操控的生物得+1/+1且獲得警戒異能。（它們攻擊時不需橫置。）",
+        "type": "生物 ～天使"
+      }
+    ],
+    "layout": "normal",
+    "legalities": {
+      "commander": "Legal",
+      "duel": "Legal",
+      "historic": "Legal",
+      "legacy": "Legal",
+      "modern": "Legal",
+      "pauper": "Legal",
+      "penny": "Legal",
+      "pioneer": "Legal",
+      "vintage": "Legal"
+    },
+    "manaCost": "{4}{W}",
+    "mtgArenaId": 67694,
+    "mtgoId": 68175,
+    "name": "Angel of the Dawn",
+    "power": "3",
+    "printings": [
+      "M19"
+    ],
+    "purchaseUrls": {
+      "cardmarket": "https://mtgjson.com/links/92b89d85ec3ba77d",
+      "tcgplayer": "https://mtgjson.com/links/4a8a7a8f34f9f226"
+    },
+    "rulings": [
+      {
+        "date": "2018-07-13",
+        "text": "Angel of the Dawn’s triggered ability affects only creatures you control at the time it resolves. Creatures you begin to control later in the turn won’t get +1/+1 or gain vigilance."
+      }
+    ],
+    "scryfallOracleId": "f63ea0e5-7769-4a22-bbb3-658281141d8c",
+    "subtypes": [
+      "Angel"
+    ],
+    "supertypes": [],
+    "text": "Flying\nWhen Angel of the Dawn enters the battlefield, creatures you control get +1/+1 and gain vigilance until end of turn. (Attacking doesn't cause them to tap.)",
+    "toughness": "3",
+    "type": "Creature — Angel",
+    "types": [
+      "Creature"
+    ],
+    "uuid": "753fb4f6-9274-594a-b695-64caf6a3bf40"
+  },
+  {
+    "colorIdentity": [
+      "W"
+    ],
+    "colors": [
+      "W"
+    ],
+    "convertedManaCost": 6,
+    "edhrecRank": 10249,
+    "foreignData": [
+      {
+        "flavorText": "Die Engel hatten nie behauptet, sie würden jemand anderem als dem Gott-Pharao dienen.",
+        "language": "German",
+        "name": "Engel des Gott-Pharaos",
+        "text": "Fliegend\nUmwandlung {2} ({2}, wirf diese Karte ab: Ziehe eine Karte.)",
+        "type": "Kreatur — Engel"
+      },
+      {
+        "flavorText": "Los ángeles fueron honestos. Desde el principio, dejaron claro que su lealtad era solamente para el Dios Faraón.",
+        "language": "Spanish",
+        "name": "Ángel del Dios Faraón",
+        "text": "Vuela.\nCiclo {2}. ({2}, descartar esta carta: Roba una carta.)",
+        "type": "Criatura — Ángel"
+      },
+      {
+        "flavorText": "Les anges ne trompèrent personne. Dès le départ, ils affirmèrent accorder leur allégeance au seul Dieu-Pharaon.",
+        "language": "French",
+        "name": "Ange du Dieu-Pharaon",
+        "text": "Vol\nRecyclage {2} ({2}, défaussez-vous de cette carte : Piochez une carte.)",
+        "type": "Créature : ange"
+      },
+      {
+        "flavorText": "Gli angeli non mentirono. Fin dal principio mostrarono chiaramente di essere fedeli al Dio Faraone e a nessun altro.",
+        "language": "Italian",
+        "name": "Angelo del Dio Faraone",
+        "text": "Volare\nCiclo {2} ({2}, Scarta questa carta: Pesca una carta.)",
+        "type": "Creatura — Angelo"
+      },
+      {
+        "flavorText": "天使たちは欺瞞したわけではない。王神のみに忠誠を捧げていることは、最初から公然たる事実であった。",
+        "language": "Japanese",
+        "name": "王神の天使",
+        "text": "飛行\nサイクリング{2}（{2}, このカードを捨てる：カードを１枚引く。）",
+        "type": "クリーチャー — 天使"
+      },
+      {
+        "flavorText": "천사들은 기만하지 않았다. 그들은 처음부터 명백하게 오직 신 파라오에게만 충성을 맹세했다.",
+        "language": "Korean",
+        "name": "신 파라오의 천사",
+        "text": "비행\n순환 {2} ({2}, 이 카드를 버린다: 카드 한 장을 뽑는다.)",
+        "type": "생물 — 천사"
+      },
+      {
+        "flavorText": "Os anjos não mentiram. Desde o início deixaram claro que eram fiéis única e exclusivamente ao Faraó-Deus.",
+        "language": "Portuguese (Brazil)",
+        "name": "Anjo do Faraó-Deus",
+        "text": "Voar\nReciclar {2} ({2}, descarte este card: Compre um card.)",
+        "type": "Criatura — Anjo"
+      },
+      {
+        "flavorText": "Ангелы не обманули. С самого начала они ясно дали понять, что верны лишь Богу-Фараону — и никому другому.",
+        "language": "Russian",
+        "name": "Ангел Бога-Фараона",
+        "text": "Полет\nЦикл {2} ({2}, сбросьте эту карту: возьмите карту.)",
+        "type": "Существо — Ангел"
+      },
+      {
+        "flavorText": "天使并未欺骗众生。他们自始至终都只效忠法老神。",
+        "language": "Chinese Simplified",
+        "name": "法老神天使",
+        "text": "飞行\n循环{2}（{2}，弃掉此牌：抓一张牌。）",
+        "type": "生物～天使"
+      },
+      {
+        "flavorText": "天使並未欺騙眾生。他們自始至終都只效忠法老神。",
+        "language": "Chinese Traditional",
+        "name": "法老神天使",
+        "text": "飛行\n循環{2}（{2}，棄掉此牌：抽一張牌。）",
+        "type": "生物～天使"
+      }
+    ],
+    "layout": "normal",
+    "legalities": {
+      "commander": "Legal",
+      "duel": "Legal",
+      "legacy": "Legal",
+      "modern": "Legal",
+      "pioneer": "Legal",
+      "vintage": "Legal"
+    },
+    "manaCost": "{4}{W}{W}",
+    "mtgArenaId": 65485,
+    "mtgoFoilId": 64493,
+    "mtgoId": 64492,
+    "name": "Angel of the God-Pharaoh",
+    "power": "4",
+    "printings": [
+      "HOU"
+    ],
+    "purchaseUrls": {
+      "cardmarket": "https://mtgjson.com/links/a405ed11932fb6b7",
+      "tcgplayer": "https://mtgjson.com/links/9f4a8df8f4fdeaaa"
+    },
+    "rulings": [],
+    "scryfallOracleId": "701912d5-9995-4ac7-9858-188f78b2b8a3",
+    "subtypes": [
+      "Angel"
+    ],
+    "supertypes": [],
+    "text": "Flying\nCycling {2} ({2}, Discard this card: Draw a card.)",
+    "toughness": "4",
+    "type": "Creature — Angel",
+    "types": [
+      "Creature"
+    ],
+    "uuid": "312761a4-e4ba-50c4-9b78-425ec5cfe825"
+  },
+  {
+    "colorIdentity": [],
+    "colors": [],
+    "convertedManaCost": 2,
+    "edhrecRank": 7841,
+    "foreignData": [
+      {
+        "flavorText": "Wird sie genommen, schneidet sie die Hand, die sie ergreift. Wird sie gegeben, heilt sie die Hand, die sie hält.",
+        "language": "German",
+        "name": "Engelsfeder",
+        "text": "Immer wenn ein Spieler einen weißen Zauberspruch spielt, kannst du 1 Lebenspunkt dazuerhalten.",
+        "type": "Artefakt"
+      },
+      {
+        "flavorText": "Si es tomada, corta la mano que la agarra. Si es dada, cura la mano que la sostiene.",
+        "language": "Spanish",
+        "name": "Pluma de ángel",
+        "text": "Siempre que un jugador juegue un hechizo blanco, puedes ganar una vida.",
+        "type": "Artefacto"
+      },
+      {
+        "flavorText": "Volée, elle tranche la main qui la serre. Donnée, elle soigne la main qui la tient.",
+        "language": "French",
+        "name": "Plume d'ange",
+        "text": "À chaque fois qu'un joueur joue un sort blanc, vous pouvez gagner 1 point de vie.",
+        "type": "Artefact"
+      },
+      {
+        "flavorText": "Se viene presa, taglia la mano che l'afferra. Se viene donata, cura la mano che la stringe.",
+        "language": "Italian",
+        "name": "Piuma d'Angelo",
+        "text": "Ogniqualvolta un giocatore gioca una magia bianca, puoi guadagnare 1 punto vita.",
+        "type": "Artefatto"
+      },
+      {
+        "flavorText": "抜かば、その掴みし手を切る。 与わば、その持ちし手を癒す。",
+        "language": "Japanese",
+        "name": "天使の羽根",
+        "text": "いずれかのプレイヤーが白の呪文をプレイするたび、あなたは１点のライフを得てもよい。",
+        "type": "アーティファクト"
+      },
+      {
+        "flavorText": "Se for arrancada, corta a mão de quem a roubou. Se for concedida, cura a mão de quem a segurou.",
+        "language": "Portuguese (Brazil)",
+        "name": "Pluma de Anjo",
+        "text": "Toda vez que um jogador joga uma mágica branca, você pode ganhar 1 ponto de vida.",
+        "type": "Artefato"
+      },
+      {
+        "flavorText": "Оно порежет руку того, кто силой его захватит. Оно исцелит руку того, кому будет даровано.",
+        "language": "Russian",
+        "name": "Перо Ангела",
+        "text": "Каждый раз, когда игрок разыгрывает белое заклинание, вы можете получить 1 жизнь.",
+        "type": "Артефакт"
+      },
+      {
+        "flavorText": "若遭冒犯，它将划破强夺之手。 若系馈送，它将治愈领受之手。",
+        "language": "Chinese Simplified",
+        "name": "天使翎羽",
+        "text": "每当牌手使用任何白色咒语时，你可以获得1点生命。",
+        "type": "神器"
+      }
+    ],
+    "layout": "normal",
+    "legalities": {
+      "commander": "Legal",
+      "duel": "Legal",
+      "legacy": "Legal",
+      "modern": "Legal",
+      "penny": "Legal",
+      "vintage": "Legal"
+    },
+    "manaCost": "{2}",
+    "mtgoFoilId": 27618,
+    "mtgoId": 27617,
+    "name": "Angel's Feather",
+    "printings": [
+      "10E",
+      "9ED",
+      "DDC",
+      "DST",
+      "DVD",
+      "M10",
+      "M11",
+      "M12",
+      "PS11"
+    ],
+    "purchaseUrls": {
+      "cardmarket": "https://mtgjson.com/links/a1d75f94a4793cfc",
+      "tcgplayer": "https://mtgjson.com/links/ff25d1fafa8afb1b"
+    },
+    "rulings": [
+      {
+        "date": "2009-10-01",
+        "text": "The ability triggers whenever any player, not just you, casts a white spell."
+      },
+      {
+        "date": "2009-10-01",
+        "text": "If a player casts a white spell, Angel’s Feather’s ability triggers and is put on the stack on top of that spell. Angel’s Feather’s ability will resolve (causing you to gain 1 life) before the spell does."
+      }
+    ],
+    "scryfallOracleId": "3d0d4ba4-d5aa-4d9f-89ab-46687637fecf",
+    "subtypes": [],
+    "supertypes": [],
+    "text": "Whenever a player casts a white spell, you may gain 1 life.",
+    "type": "Artifact",
+    "types": [
+      "Artifact"
+    ],
+    "uuid": "cf706172-38d6-53dc-a493-1eb19f027a66"
+  },
+  {
+    "colorIdentity": [],
+    "colors": [],
+    "convertedManaCost": 3,
+    "edhrecRank": 12627,
+    "foreignData": [
+      {
+        "flavorText": "„Glaube kann selbst die Steine mit Leben erfüllen.\" —Schriften des Mikaeus",
+        "language": "German",
+        "name": "Grab des Engels",
+        "text": "Immer wenn eine Kreatur unter deiner Kontrolle ins Spiel kommt, kannst du das Engelsgrab bis zum Ende des Zugs zu einer 3/3 weißen Engel-Artefaktkreatur mit Flugfähigkeit werden lassen.",
+        "type": "Artefakt"
+      },
+      {
+        "flavorText": "\"La fe puede conferir vida a las propias piedras.\" —Escrituras de Mikaeus",
+        "language": "Spanish",
+        "name": "Tumba del ángel",
+        "text": "Siempre que una criatura entre al campo de batalla bajo tu control, puedes hacer que la Tumba del ángel se convierta en una criatura artefacto Ángel blanca 3/3 con la habilidad de volar hasta el final del turno.",
+        "type": "Artefacto"
+      },
+      {
+        "flavorText": "« La foi peut donner vie aux pierres elles-mêmes. » —Écrits de Mikaeus",
+        "language": "French",
+        "name": "Tombe de l'ange",
+        "text": "À chaque fois qu'une créature arrive sur le champ de bataille sous votre contrôle, vous pouvez faire que la Tombe de l'ange devienne une créature-artefact 3/3 blanche Ange avec le vol jusqu'à la fin du tour.",
+        "type": "Artefact"
+      },
+      {
+        "flavorText": "\"La fede può infondere vita persino nelle pietre.\" —Scritti di Mikaeus",
+        "language": "Italian",
+        "name": "Sepolcro dell'Angelo",
+        "text": "Ogniqualvolta una creatura entra nel campo di battaglia sotto il tuo controllo, puoi far diventare il Sepolcro dell'Angelo una creatura artefatto Angelo 3/3 bianca con volare fino alla fine del turno.",
+        "type": "Artefatto"
+      },
+      {
+        "flavorText": "「信仰は石にさえ命の息吹を与える。」 ――ミケウスのメモ",
+        "language": "Japanese",
+        "name": "天使の墳墓",
+        "text": "クリーチャーが１体あなたのコントロール下で戦場に出るたび、あなたは「天使の墳墓は、ターン終了時まで飛行を持つ白の３/３の天使・アーティファクト・クリーチャーになる。」を選んでもよい。",
+        "type": "アーティファクト"
+      },
+      {
+        "flavorText": "\"믿음은 돌에도 생명을 불어넣는다.\" —미케이우스의 저서",
+        "language": "Korean",
+        "name": "천사의 무덤",
+        "text": "생물이 당신의 조종하에 전장에 들어올 때마다, 당신은 턴종료까지 천사의 무덤을 비행 능력을 가진 3/3 백색 천사 마법물체 생물이 되도록 할 수 있다.",
+        "type": "마법물체"
+      },
+      {
+        "flavorText": "\"A fé pode dar vida até mesmo às pedras.\" — Escritos de Mikaeus",
+        "language": "Portuguese (Brazil)",
+        "name": "Tumba de Anjo",
+        "text": "Toda vez que uma criatura entra no campo de batalha sob o seu controle, você pode fazer com que Tumba de Anjo se torne uma criatura artefato branca 3/3 do tipo Anjo com voar até o final do turno.",
+        "type": "Artefato"
+      },
+      {
+        "flavorText": "«Вера может оживить даже камни». — Из записей Микеаса",
+        "language": "Russian",
+        "name": "Гробница Ангела",
+        "text": "Каждый раз, когда существо выходит на поле битвы под вашим контролем, вы можете заставить Гробницу Ангела стать артефактным существом 3/3 белый Ангел с Полетом до конца хода.",
+        "type": "Артефакт"
+      },
+      {
+        "flavorText": "「信念能替顽石激发生命。」 ～米凯耶的著作",
+        "language": "Chinese Simplified",
+        "name": "天使之墓",
+        "text": "每当一个生物在你的操控下进战场时，你可以令天使之墓成为3/3白色，具飞行异能的天使神器生物直到回合结束。",
+        "type": "神器"
+      },
+      {
+        "flavorText": "「信念能替頑石激發生命。」 ～米凱耶的著作",
+        "language": "Chinese Traditional",
+        "name": "天使之墓",
+        "text": "每當一個生物在你的操控下進戰場時，你可以令天使之墓成為3/3白色，具飛行異能的天使神器生物直到回合結束。",
+        "type": "神器"
+      }
+    ],
+    "layout": "normal",
+    "legalities": {
+      "commander": "Legal",
+      "duel": "Legal",
+      "legacy": "Legal",
+      "modern": "Legal",
+      "penny": "Legal",
+      "pioneer": "Legal",
+      "vintage": "Legal"
+    },
+    "manaCost": "{3}",
+    "mtgoFoilId": 43966,
+    "mtgoId": 43965,
+    "name": "Angel's Tomb",
+    "printings": [
+      "AVR",
+      "ORI"
+    ],
+    "purchaseUrls": {
+      "cardmarket": "https://mtgjson.com/links/44e567746d93d99a",
+      "tcgplayer": "https://mtgjson.com/links/76fe83bfd957a162"
+    },
+    "rulings": [
+      {
+        "date": "2015-06-22",
+        "text": "If Angel’s Tomb is already a creature when a creature enters the battlefield under your control, its ability will override any effects that set its base power and toughness to specific values, but other changes to its power and toughness (such as the one created by Titanic Growth) will still apply."
+      },
+      {
+        "date": "2015-06-22",
+        "text": "Effects setting Angel’s Tomb’s base power and toughness to specific values that begin to apply after Angel’s Tomb has become a creature will override the effect of Angel’s Tomb. For example, if an effect causes a 3/3 Angel’s Tomb to become 0/1, it will remain 0/1 until another effect (such as triggering the ability of Angel’s Tomb a second time or targeting it with Titanic Growth) causes those values to change."
+      }
+    ],
+    "scryfallOracleId": "de3ed52e-7cc2-49ea-96d9-4254aac46168",
+    "subtypes": [],
+    "supertypes": [],
+    "text": "Whenever a creature enters the battlefield under your control, you may have Angel's Tomb become a 3/3 white Angel artifact creature with flying until end of turn.",
+    "type": "Artifact",
+    "types": [
+      "Artifact"
+    ],
+    "uuid": "92a2b503-01e7-506f-846b-4d3ecda35c56"
+  },
+  {
+    "colorIdentity": [],
+    "colors": [],
+    "convertedManaCost": 3,
+    "edhrecRank": 6468,
+    "foreignData": [
+      {
+        "language": "German",
+        "name": "Engelshorn",
+        "text": "Kreaturen werden beim Angreifen nicht getappt.\nTappe am Ende eines Zuges jedes Spielers alle ungetappten Kreaturen, die dieser Spieler kontrolliert und die nicht in diesem Zug angegriffen haben. Das Engelshorn fügt dem Spieler 1 Schadenspunkt für jede so getappte Kreatur zu.",
+        "type": "Artefakt"
+      },
+      {
+        "language": "Spanish",
+        "name": "Trompeta de ángeles"
+      },
+      {
+        "language": "French",
+        "name": "Trompette de l'ange"
+      },
+      {
+        "language": "Italian",
+        "name": "Tromba dell'Angelo"
+      },
+      {
+        "language": "Japanese",
+        "name": "天使のトランペット"
+      },
+      {
+        "language": "Portuguese (Brazil)",
+        "name": "Clarim dos Anjos"
+      }
+    ],
+    "layout": "normal",
+    "legalities": {
+      "commander": "Legal",
+      "duel": "Legal",
+      "legacy": "Legal",
+      "vintage": "Legal"
+    },
+    "manaCost": "{3}",
+    "mtgoFoilId": 12676,
+    "mtgoId": 12675,
+    "name": "Angel's Trumpet",
+    "printings": [
+      "ULG"
+    ],
+    "purchaseUrls": {
+      "cardmarket": "https://mtgjson.com/links/a3541aea60633b12",
+      "tcgplayer": "https://mtgjson.com/links/dafb86559ecc15b8"
+    },
+    "rulings": [
+      {
+        "date": "2004-10-04",
+        "text": "Angel’s Trumpet affects creatures with Defender and other creatures that can’t attack for some reason."
+      },
+      {
+        "date": "2004-10-04",
+        "text": "It does not affect creatures which did not attack, but which are already tapped at the time the ability resolves."
+      }
+    ],
+    "scryfallOracleId": "f187f766-3696-419e-9865-58023a46446b",
+    "subtypes": [],
+    "supertypes": [],
+    "text": "All creatures have vigilance.\nAt the beginning of each player's end step, tap all untapped creatures that player controls that didn't attack this turn. Angel's Trumpet deals damage to the player equal to the number of creatures tapped this way.",
+    "type": "Artifact",
+    "types": [
+      "Artifact"
+    ],
+    "uuid": "1dfa1d3f-38a8-53e0-afed-dd2a6eaddad7"
+  }
+]

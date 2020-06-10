@@ -1,0 +1,14 @@
+{
+  "name": "structured-search",
+  "version": "1.0.0",
+  "description": "Structured object-search library built on top of string-search.",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "string-search": "git+https://github.com/jtq/string-search.git"
+  }
+}
