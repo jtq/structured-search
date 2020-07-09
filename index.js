@@ -1,6 +1,6 @@
 // string-search: Fuzzy matching (Levenshtein distance by replacing up to N chracters with wildcards)
 // string-search: manual weighting of categories when constructing index?
-// structured-search: manual weighting of categories in query?
+// DONE (custom weighting function): structured-search: manual weighting of categories in query?
 // DONE structured-search: automatic weighting of subqueries by specificity (fewer results returned = higher weight because it's more selective)
 // "exact string match" search (post-processing?)
 // Scaling behaviour on full-text search?
@@ -204,19 +204,21 @@ class QueryResults {
       },
       (result, word, category, subquery) => {
         if(!this.excludedHits[result.id]) {
-          if(this.rankedResults[result.id]) {
-            this.rankedResults[result.id].required[subquery.input] = true;
-            this.rankedResults[result.id].weight = this.weightSearchResult(this.rankedResults[result.id].weight, subquery, category, countPositiveResultsNotDeduped, result);  // The more results a search query returns, the less hits contribute to ranking as they're inherently less specific.  The more times a result contins the search term, the more it contributes.
+          const existingResult = this.rankedResults[result.id];
+          if(existingResult) {
+            existingResult.required[subquery.input] = true;
+            existingResult.weight = this.weightSearchResult(existingResult.weight, subquery, category, countPositiveResultsNotDeduped, result);  // The more results a search query returns, the less hits contribute to ranking as they're inherently less specific.  The more times a result contins the search term, the more it contributes.
           }
           else {
-            this.rankedResults[result.id] = {
+            const newResult = {
               required: {
                 [subquery.input]: true
               },
               document: result.value,
               weight: 0
             };
-            this.rankedResults[result.id].weight = this.weightSearchResult(this.rankedResults[result.id].weight, subquery, category, countPositiveResultsNotDeduped, result);
+            newResult.weight = this.weightSearchResult(newResult.weight, subquery, category, countPositiveResultsNotDeduped, result);
+            this.rankedResults[result.id] = newResult;
           }
         }
       },
@@ -245,22 +247,24 @@ class QueryResults {
     this.run(`  Process remaining results`, () => this.processSubqueryResults(
       (subquery) => !subquery.required && !subquery.excluded,
       (result, word, category, subquery) => {
-        if(numMandatorySubqueries && this.rankedResults[result.id]) { // There are mandatory subqueries and this result qualifies as one, so add one to its count
-          this.rankedResults[result.id].weight = this.weightSearchResult(this.rankedResults[result.id].weight, subquery, category, countPositiveResultsNotDeduped, result);
+        const existingResult = this.rankedResults[result.id];
+        if(numMandatorySubqueries && existingResult) { // There are mandatory subqueries and this result qualifies as one, so add one to its count
+          existingResult.weight = this.weightSearchResult(existingResult.weight, subquery, category, countPositiveResultsNotDeduped, result);
         }
         else if (!numMandatorySubqueries && !this.excludedHits[result.id]) {  // There aren't any mandatory subqueries, and this result is not explicitly excluded by any exclude subqueries
-          if(this.rankedResults[result.id]) {
-            this.rankedResults[result.id].weight = this.weightSearchResult(this.rankedResults[result.id].weight, subquery, category, countPositiveResultsNotDeduped, result);
+          if(existingResult) {
+            existingResult.weight = this.weightSearchResult(existingResult.weight, subquery, category, countPositiveResultsNotDeduped, result);
           }
           else {
-            this.rankedResults[result.id] = {
+            const newResult = {
               required: {
                 [subquery.input]: false
               },
               document: result.value,
               weight: 0
             };
-            this.rankedResults[result.id].weight = this.weightSearchResult(this.rankedResults[result.id].weight, subquery, category, countPositiveResultsNotDeduped, result);
+            newResult.weight = this.weightSearchResult(newResult.weight, subquery, category, countPositiveResultsNotDeduped, result);
+            this.rankedResults[result.id] = newResult;
           }
         }
       }
