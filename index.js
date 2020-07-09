@@ -49,11 +49,10 @@ const getLookupFunction = (str) => {
 
 class StructuredSearchIndex {
 
-  constructor(objects, indexObjectFunction, timeFunction, normaliseFunction=normalise, getLookup=getLookupFunction) {
+  constructor(objects, indexObjectFunction, timeFunction, normaliseFunction=normalise) {
     this.debugOutput = !!timeFunction && timeFunction !== debugPassthrough;
     this.run = timeFunction || debugPassthrough;
     this.normalise = normaliseFunction;
-    this.getLookup = getLookup;
     this.index = {};
     this.run(`Build index of ${objects.length} items`, () => {
       for(let i=0; i<objects.length; i++) {
@@ -74,7 +73,34 @@ class StructuredSearchIndex {
   // Parse raw input query terms into a useful structured form & work out the most performant lookup function that satisfies each term's requirements
   parseQueryTerms(inputString) {
     return this.run(`Parse query terms`, () => {
-      return inputString.split(/\s+/).map(t => new Subquery(t, this.normalise, this.getLookup));
+      return inputString.split(/\s+/).map(inputTerm => {
+        const input = this.normalise(inputTerm);
+        let required = null;
+        let excluded = false;
+
+        if(inputTerm[0] === "+") {
+          required = true;
+          inputTerm = inputTerm.substring(1);
+        }
+
+        if(inputTerm[0] === "-") {
+          excluded = true;
+          inputTerm = inputTerm.substring(1);
+        }
+
+        let [selector, term] = inputTerm.split(':');
+        if(term) {
+          term = this.normalise(term);
+          selector = this.normalise(selector);
+        }
+        else {
+          term = this.normalise(selector);
+          selector = null;
+        }
+
+        const lookupFunction = getLookupFunction(term);
+        return new Subquery(inputTerm, term, selector, required, excluded, lookupFunction);
+      });
     });
   }
 
@@ -109,32 +135,14 @@ class StructuredSearchIndex {
 
 class Subquery {
 
-  constructor(str, normalise=normalise, getLookup=getLookupFunction) {
-    this.input = normalise(str);
-    this.required = null;
-    this.excluded = false;
+  constructor(input, term, selector, required, excluded, lookupFunction) {
+    this.input = input;
+    this.term = term;
+    this.selector = selector;
+    this.required = required;
+    this.excluded = excluded;
+    this.lookupFunction = lookupFunction;
 
-    if(str[0] === "+") {
-      this.required = true;
-      str = str.substring(1);
-    }
-
-    if(str[0] === "-") {
-      this.excluded = true;
-      str = str.substring(1);
-    }
-
-    let [selector, term] = str.split(':');
-    if(term) {
-      this.term = normalise(term);
-      this.selector = normalise(selector);
-    }
-    else {
-      this.term = normalise(selector);
-      this.selector = null;
-    }
-
-    this.lookupFunction = getLookup(this.term);
     this.results = null;
     this.count = undefined;
   }

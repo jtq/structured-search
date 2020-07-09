@@ -72,7 +72,7 @@ const subqueries = structuredSearchIndex.parseQueryTerms(QUERY);
 
 // Perform subqueries
 if(DEBUG_OUTPUT) {
-console.log(`Perform subqueries:`);
+  console.log(`Perform subqueries:`);
 }
 time(`  ...Total subquery time`, () => structuredSearchIndex.performSubqueries(subqueries));
 
@@ -80,7 +80,7 @@ const queryResults = new QueryResults(subqueries, weightSearchResult, time);
 
 // Now work out how to turn the data structure inside-out and combine the different result-sets into a single ordered list of documents
 if(DEBUG_OUTPUT) {
-console.log(`Normalise and weight subquery results:`);
+  console.log(`Normalise and weight subquery results:`);
 }
 time(`  ...Total time to normalise and weight`, () => queryResults.combineSubqueryResults());
 
