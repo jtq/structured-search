@@ -1,6 +1,6 @@
 # Simple Object Search Engine
 
-A simple inverted-index search engine to index and store objects based on implementor-defined search terms.
+A simple inverted-index search engine to index and store objects based on implementor-defined search terms, build on top of [@jtq/string-search](https://github.com/jtq/string-search).
 
 For a collection of objects, choose which fields you index each object on and whether/how to tokenise each field.
 
