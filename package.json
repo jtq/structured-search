@@ -4,7 +4,7 @@
   "description": "Structured object-search library built on top of string-search.",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "explore": "node explore.js"
   },
   "author": "",
   "license": "ISC",

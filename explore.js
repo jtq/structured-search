@@ -1,4 +1,4 @@
-const { StructuredSearchIndex, QueryResults, debugOutput, debugPassthrough } = require('./index');
+const { StructuredSearchIndex, QueryResults, parseQueryTerms, debugOutput, debugPassthrough } = require('./index');
 const { readFileSync } = require('fs');
 const util = require('util');
 
@@ -67,8 +67,8 @@ const library = time(`Load library from file`, () => {
   return Object.values(JSON.parse(readFileSync(OBJECTS_FILE, { encoding:'utf8' })));
 });
 
-const structuredSearchIndex = new StructuredSearchIndex(library, indexMTGCard, time, normalise);
-const subqueries = structuredSearchIndex.parseQueryTerms(QUERY);
+const structuredSearchIndex = new StructuredSearchIndex(library, indexMTGCard, time, normalise, weightSearchResult);
+const subqueries = structuredSearchIndex.defaultParseQueryTermsFunction(QUERY);
 
 // Perform subqueries
 if(DEBUG_OUTPUT) {

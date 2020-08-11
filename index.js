@@ -47,18 +47,24 @@ const getLookupFunction = (str) => {
   }
 };
 
+const weightSearchResult = (existingWeight) => existingWeight + 1;  // Simple search weighting - weight based on number of query terms that match this result
+
 class StructuredSearchIndex {
 
-  constructor(objects, indexObjectFunction, timeFunction, normaliseFunction=normalise) {
+  constructor(objects, indexObjectFunction, timeFunction, normaliseFunction=normalise, weightSearchResultFunction=weightSearchResult, parseQueryTermsFunction) {
     this.debugOutput = !!timeFunction && timeFunction !== debugPassthrough;
     this.run = timeFunction || debugPassthrough;
     this.normalise = normaliseFunction;
+    this.weightSearchResult = weightSearchResultFunction;
+    this.parseQueryTerms = parseQueryTermsFunction || this.defaultParseQueryTermsFunction;
     this.index = {};
-    this.run(`Build index of ${objects.length} items`, () => {
-      for(let i=0; i<objects.length; i++) {
-        indexObjectFunction(this, objects[i]);
-      }
-    });
+    if(objects instanceof Array && indexObjectFunction instanceof Function) {
+      this.run(`Build index of ${objects.length} items`, () => {
+        for(let i=0; i<objects.length; i++) {
+          indexObjectFunction(this, objects[i]);
+        }
+      });
+    }
   }
 
   // searchTerm: the string we're indexing for this object
@@ -70,8 +76,16 @@ class StructuredSearchIndex {
     return addToIndex(this.index, searchTerm, { id, value, metadata }, category);
   }
 
+  query(queryString) {
+    const subqueries = this.parseQueryTerms(queryString);
+    this.performSubqueries(subqueries);
+    const queryResults = new QueryResults(subqueries, this.weightSearchResult);
+    queryResults.combineSubqueryResults();
+    return queryResults.sortResults();
+  }
+
   // Parse raw input query terms into a useful structured form & work out the most performant lookup function that satisfies each term's requirements
-  parseQueryTerms(inputString) {
+  defaultParseQueryTermsFunction(inputString) {
     return this.run(`Parse query terms`, () => {
       return inputString.split(/\s+/).map(inputTerm => {
         const input = this.normalise(inputTerm);
